@@ -1,0 +1,122 @@
+﻿
+use svgshapes
+
+INSERT INTO `users` (`username`,`name`,`surname`,`password`,`email`,`user_type`,`school`,`school_level`,`level_section`) VALUES
+
+('nikol','Nikolitsa','Manetta','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','nikol@gmail.com','T',1,'Α',0),
+('george','George','Papadopoulos','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','george@gmail.com','S',1,'Α',0),
+('nikolkaral','Nikolas','Karalis','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','nikolkaral@hotmail.gr','S',6,'ΣΤ',1),
+('fanis','Fanis','Vassis','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','fanis@hotmail.com','S',6,'ΣΤ',1),
+('vagg21','Vaggelis','Vasilopoulos','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','vagg1924@gmail.com','S',1,'Α',0),
+('orama123','Maria','kopsopodi','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','orama@gmail.com','S',13,'Ε',2),
+('googlish','George','Papadimitriou','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','george21@gmail.com','S',13,'Ε',2),
+('konna','kostantina','Meilixou','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','konn2000@gmail.com','S',1,'ΣΤ',0),
+('dimdol','Dimitris','Dolmpis','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','dimitris@gmail.com','S',8,'Γ',1),
+('dimklv','Dimitra','Kolovou','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','klv2012@gmail.com','S',1,'Β',1),
+('deppy','Despoina','Andriopoulou','7110eda4d09e062aa5e4a390b0a572ac0d2c0220','deppy@gmail.com','S',1,'Α',0);
+
+
+INSERT INTO `telephone` (`home`,`mobile`,`user_id`) VALUES
+
+('2105555555','','nikol'),
+('2610525123','6977788777','george'),
+('2610421956','','nikolkaral'),
+('2641055645','','fanis'),
+('2610129691','','vagg21'),
+('2109182736','','orama123'),
+('2610876986','6971608077','googlish'),
+('2108120919','','κοnna'),
+('2108998123','','dimdol'),
+('2105598123','','dimklv'),
+('','6978521236','deppy');
+
+INSERT INTO `rect` (`user_idr`,`area`,`perimeter`) VALUES
+('nikol','true','false'),
+('nikolkaral','true','false'),
+('googlish','false','false'),
+('deppy','true','true'),
+('george','false', 'true');
+
+
+INSERT INTO `straight` (`user_idr`,`mikos`) VALUES
+('nikol','true'),
+('orama123','true'),
+('κοnna','false'),
+('googlish','false'),
+('vagg21','true'),
+('fanis','true'),
+('deppy','false'),
+('george','true');
+
+INSERT INTO `circle` (`username`,`diameter`,`area`,`perimeter`) VALUES
+('nikol','true','false', 'false'),
+('dimklv','true','false', 'true'),
+('κοnna','true','true', 'true'),
+('googlish','false','false', 'true'),
+('vagg21','true','true', 'true'),
+('fanis','true','false', 'false'),
+('deppy','true','false', 'true'),
+('george','true', 'true', 'true');
+
+
+INSERT INTO `ellipse` (`username`,`area`,`perimeter`) VALUES
+('nikol','true','true'),
+('dimklv','true','false'),
+('κοnna','false','true'),
+('googlish','false','false'),
+('vagg21','true','true'),
+('fanis','true','true'),
+('deppy','false','false'),
+('george','true', 'true');
+
+
+INSERT INTO `rhombus` (`username`,`area`,`perimeter`) VALUES
+('nikol','true','true'),
+('dimklv','false','false'),
+('dimdol','false','true'),
+('googlish','false','false'),
+('vagg21','true','true'),
+('fanis','false','true'),
+('orama123','true','false'),
+('george','false', 'true');
+
+
+INSERT INTO `skalino` (`username`,`ab`,`bc`,`ca`,`perimeter`) VALUES
+('nikol','true','false', 'false', 'true'),
+('dimklv','true','false', 'true', 'false'),
+('κοnna','true','true', 'true', 'true'),
+('googlish','false','false', 'true', 'false'),
+('vagg21','true','true', 'true', 'true'),
+('fanis','true','false', 'false', 'true'),
+('george','true','false', 'true', 'true'),
+('deppy','true','false', 'true', 'true'),
+('dimdol','true', 'true', 'true', 'false');
+
+
+INSERT INTO `isoskeles` (`username`,`angle`,`base`, `height`,`area`,`perimeter`) VALUES
+('nikol','true','false', 'false', 'true','true'),
+('dimklv','true','false', 'true', 'false','false'),
+('κοnna','true','true', 'true', 'true','false'),
+('nikolkaral','false','false', 'true', 'false','false'),
+('vagg21','true','true', 'true', 'true','false'),
+('fanis','true','false', 'false', 'true','false'),
+('george','true','false', 'true', 'true','false'),
+('deppy','true','false', 'true', 'true','false'),
+('dimdol','true', 'true', 'true', 'false','false');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
